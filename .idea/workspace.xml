@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bafd864-b3c9-4c03-a236-86f5c03c7b47" name="Changes" comment="[Webflux 학습 #6 Webflux-PostController2]&#10;&#10;- 1. Post domain에 대한 CRUD 비동기 API 구축&#10;- 2. User domain 을 memory -&gt; R2dbc 로 repository 변경&#10;- 3. Post domain에 대해 R2dbc 를 이용하여 비동기 db 사용&#10;- 4. R2dbcConfig를 통해 db와의 connection 확인">
+    <list default="true" id="5bafd864-b3c9-4c03-a236-86f5c03c7b47" name="Changes" comment="[Webflux 학습 #8 Webflux-Reactive Redis]&#10;&#10;- 1. Reactive Redis 를 통해 cache 사용 구성&#10;- 2. R2dbcConfig를 통해 db와의 connection 확인&#10;- 3. User domain에서 User 정보를 redis cache 기능 사용">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webflux/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webmvc/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/webmvc/build.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +79,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "/Users/gtpark/IdeaProjects/fastcampus/mywebflux/webflux/src/main/java/com/example/webflux/repository",
+    "last_opened_file_path": "/Users/gtpark/IdeaProjects/fastcampus/mywebflux",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -269,7 +268,8 @@
       <updated>1709627977479</updated>
       <workItem from="1709627978613" duration="10424000" />
       <workItem from="1709649287681" duration="489000" />
-      <workItem from="1709649803538" duration="4091000" />
+      <workItem from="1709649803538" duration="4970000" />
+      <workItem from="1709680038732" duration="204000" />
     </task>
     <task id="LOCAL-00001" summary="[Webflux 학습 #1. Publisher/Subscriber]&#10;- 1. Reactor API 기본 개념 숙지&#10;- 2. Flux/Mono 학습&#10;- 3. publisher 가 있으면 무조건 subscriber 가 있어야 작동한다.">
       <created>1709629539808</created>
@@ -306,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709678335259</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Webflux 학습 #7 Webflux-Reactive Redis]&#10;&#10;- 1. Reactive Redis 를 통해 cache 사용 구성&#10;- 2. R2dbcConfig를 통해 db와의 connection 확인&#10;- 3. User domain에서 User 정보를 redis cache 기능 사용">
+      <created>1709679187833</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709679187833</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +336,7 @@
     <MESSAGE value="[Webflux 학습 #3 Webflux-PostController]&#10;&#10;- 1. Router function vs Controller annotation 방식 차이 확인&#10;- 2. Webclient 를 통해 서버간의 비동기 통신 확인(PostController)&#10;- 3. multi module 구조를 위한 마이그레이션" />
     <MESSAGE value="[Webflux 학습 #5 Webflux-UserController]&#10;&#10;- 1. User domain에 대한 CRUD 비동기 API 구축&#10;- 2. ConcurrentHashMap, AtomicLong 사용하여 thread-safe 하게 구성" />
     <MESSAGE value="[Webflux 학습 #6 Webflux-PostController2]&#10;&#10;- 1. Post domain에 대한 CRUD 비동기 API 구축&#10;- 2. User domain 을 memory -&gt; R2dbc 로 repository 변경&#10;- 3. Post domain에 대해 R2dbc 를 이용하여 비동기 db 사용&#10;- 4. R2dbcConfig를 통해 db와의 connection 확인" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Webflux 학습 #6 Webflux-PostController2]&#10;&#10;- 1. Post domain에 대한 CRUD 비동기 API 구축&#10;- 2. User domain 을 memory -&gt; R2dbc 로 repository 변경&#10;- 3. Post domain에 대해 R2dbc 를 이용하여 비동기 db 사용&#10;- 4. R2dbcConfig를 통해 db와의 connection 확인" />
+    <MESSAGE value="[Webflux 학습 #7 Webflux-Reactive Redis]&#10;&#10;- 1. Reactive Redis 를 통해 cache 사용 구성&#10;- 2. R2dbcConfig를 통해 db와의 connection 확인&#10;- 3. User domain에서 User 정보를 redis cache 기능 사용" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Webflux 학습 #7 Webflux-Reactive Redis]&#10;&#10;- 1. Reactive Redis 를 통해 cache 사용 구성&#10;- 2. R2dbcConfig를 통해 db와의 connection 확인&#10;- 3. User domain에서 User 정보를 redis cache 기능 사용" />
   </component>
 </project>
