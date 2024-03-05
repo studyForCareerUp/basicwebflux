@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bafd864-b3c9-4c03-a236-86f5c03c7b47" name="Changes" comment="[Webflux 학습 #8 Webflux-Reactive Redis]&#10;&#10;- 1. Reactive Redis 를 통해 cache 사용 구성&#10;- 2. R2dbcConfig를 통해 db와의 connection 확인&#10;- 3. User domain에서 User 정보를 redis cache 기능 사용">
+    <list default="true" id="5bafd864-b3c9-4c03-a236-86f5c03c7b47" name="Changes" comment="[Webflux 학습 #9 performance Webflux vs WebMVC]&#10;&#10;- 1. PerformanceController 를 통해 성능 비교 구성&#10;- 2. Jmeter 를 통해 성능 비교&#10;- 3. 3가지 상황에 따른 성능 비교&#10;  1) 그냥 호출&#10;  2) db 호출&#10;  3) redis 호출">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webmvc/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/webmvc/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webflux/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/WebfluxApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/WebfluxApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,11 +114,11 @@
       <recent name="com.example.mywebflux.reactor" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.webmvc" />
       <recent name="com.example.webflux.config" />
       <recent name="com.example.webflux.dto" />
       <recent name="com.example.webflux.repository" />
       <recent name="com.example.webflux.service" />
-      <recent name="com.example.webflux.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -126,7 +128,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.WebmvcApplication">
+  <component name="RunManager" selected="Spring Boot.WebfluxApplication">
     <configuration name="Operator1Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -237,6 +239,7 @@
     <configuration name="WebfluxApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="webflux.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.webflux.WebfluxApplication" />
+      <option name="VM_PARAMETERS" value="-XX:+AllowRedefinitionToAddDeleteMethods" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -248,6 +251,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.Operator1Test" />
+      <item itemvalue="Gradle.webflux [build]" />
+      <item itemvalue="Gradle.webflux [classes]" />
+      <item itemvalue="Gradle.webflux [clean]" />
+      <item itemvalue="Gradle.webflux [dependencies]" />
+      <item itemvalue="Spring Boot.WebfluxApplication" />
+      <item itemvalue="Spring Boot.WebmvcApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.webflux [build]" />
@@ -269,7 +281,7 @@
       <workItem from="1709627978613" duration="10424000" />
       <workItem from="1709649287681" duration="489000" />
       <workItem from="1709649803538" duration="4970000" />
-      <workItem from="1709680038732" duration="204000" />
+      <workItem from="1709680038732" duration="931000" />
     </task>
     <task id="LOCAL-00001" summary="[Webflux 학습 #1. Publisher/Subscriber]&#10;- 1. Reactor API 기본 개념 숙지&#10;- 2. Flux/Mono 학습&#10;- 3. publisher 가 있으면 무조건 subscriber 가 있어야 작동한다.">
       <created>1709629539808</created>
@@ -313,7 +325,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709679187833</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="[Webflux 학습 #9 performance Webflux vs WebMVC]&#10;&#10;- 1. PerformanceController 를 통해 성능 비교 구성&#10;- 2. Jmeter 를 통해 성능 비교&#10;- 3. 3가지 상황에 따른 성능 비교&#10;  1) 그냥 호출&#10;  2) db 호출&#10;  3) redis 호출">
+      <created>1709680752715</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709680752715</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,6 +356,7 @@
     <MESSAGE value="[Webflux 학습 #5 Webflux-UserController]&#10;&#10;- 1. User domain에 대한 CRUD 비동기 API 구축&#10;- 2. ConcurrentHashMap, AtomicLong 사용하여 thread-safe 하게 구성" />
     <MESSAGE value="[Webflux 학습 #6 Webflux-PostController2]&#10;&#10;- 1. Post domain에 대한 CRUD 비동기 API 구축&#10;- 2. User domain 을 memory -&gt; R2dbc 로 repository 변경&#10;- 3. Post domain에 대해 R2dbc 를 이용하여 비동기 db 사용&#10;- 4. R2dbcConfig를 통해 db와의 connection 확인" />
     <MESSAGE value="[Webflux 학습 #7 Webflux-Reactive Redis]&#10;&#10;- 1. Reactive Redis 를 통해 cache 사용 구성&#10;- 2. R2dbcConfig를 통해 db와의 connection 확인&#10;- 3. User domain에서 User 정보를 redis cache 기능 사용" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Webflux 학습 #7 Webflux-Reactive Redis]&#10;&#10;- 1. Reactive Redis 를 통해 cache 사용 구성&#10;- 2. R2dbcConfig를 통해 db와의 connection 확인&#10;- 3. User domain에서 User 정보를 redis cache 기능 사용" />
+    <MESSAGE value="[Webflux 학습 #9 performance Webflux vs WebMVC]&#10;&#10;- 1. PerformanceController 를 통해 성능 비교 구성&#10;- 2. Jmeter 를 통해 성능 비교&#10;- 3. 3가지 상황에 따른 성능 비교&#10;  1) 그냥 호출&#10;  2) db 호출&#10;  3) redis 호출" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Webflux 학습 #9 performance Webflux vs WebMVC]&#10;&#10;- 1. PerformanceController 를 통해 성능 비교 구성&#10;- 2. Jmeter 를 통해 성능 비교&#10;- 3. 3가지 상황에 따른 성능 비교&#10;  1) 그냥 호출&#10;  2) db 호출&#10;  3) redis 호출" />
   </component>
 </project>

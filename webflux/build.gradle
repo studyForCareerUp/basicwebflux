@@ -27,7 +27,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-r2dbc' //r2dbc 사용을 위해 추가
     implementation 'org.springframework.boot:spring-boot-starter-data-redis-reactive' //reactive redis 사용을 위해
     implementation 'io.asyncer:r2dbc-mysql:1.0.2' // spi 1.0.0 (spring boot3)
-//    implementation 'io.projectreactor.tools:blockhound:1.0.7.RELEASE'
+    implementation 'io.projectreactor.tools:blockhound:1.0.7.RELEASE'
     testImplementation 'io.projectreactor.tools:blockhound:1.0.8.RELEASE'
 
     compileOnly 'org.projectlombok:lombok'
