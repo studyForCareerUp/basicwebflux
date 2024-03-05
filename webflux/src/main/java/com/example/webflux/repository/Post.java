@@ -2,32 +2,39 @@ package com.example.webflux.repository;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
 
 import java.time.LocalDateTime;
 
-
-// entity
- @Data
+@Table("posts")
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-@Table("users")
-public class User {
-
+@Getter
+public class Post {
     @Id
     private Long id;
 
-    private String name;
+    @Column("user_id")
+    private Long userId;
 
-    private String email;
+    private String title;
+
+    private String content;
+
+    @Transient
+    private User user;
+
     @CreatedDate
     private LocalDateTime createdAt;
     @LastModifiedDate
     private LocalDateTime updatedAt;
+
 }
