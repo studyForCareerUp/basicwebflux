@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bafd864-b3c9-4c03-a236-86f5c03c7b47" name="Changes" comment="[Webflux 학습 #6 Webflux-PostController2]&#10;&#10;- 1. Post domain에 대한 CRUD 비동기 API 구축&#10;- 2. User domain 을 memory -&gt; R2dbc 로 repository 변경&#10;- 3. Post domain에 대해 R2dbc 를 이용하여 비동기 db 사용&#10;- 4. R2dbcConfig를 통해 db와의 connection 확인">
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/config/R2dbcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/controller/PostControllerV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/dto/PostCreateRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/dto/PostResponseV2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/dto/UserPostResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/repository/Post.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/repository/PostCustomR2dbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/repository/PostCustomR2dbcRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/repository/PostR2dbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/repository/UserR2dbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/service/PostServiceV2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webflux/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/repository/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/repository/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webflux/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,11 +113,11 @@
       <recent name="com.example.mywebflux.reactor" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.webflux.config" />
       <recent name="com.example.webflux.dto" />
       <recent name="com.example.webflux.repository" />
       <recent name="com.example.webflux.service" />
       <recent name="com.example.webflux.controller" />
-      <recent name="com.example.webflux.config" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -284,7 +269,7 @@
       <updated>1709627977479</updated>
       <workItem from="1709627978613" duration="10424000" />
       <workItem from="1709649287681" duration="489000" />
-      <workItem from="1709649803538" duration="3450000" />
+      <workItem from="1709649803538" duration="4091000" />
     </task>
     <task id="LOCAL-00001" summary="[Webflux 학습 #1. Publisher/Subscriber]&#10;- 1. Reactor API 기본 개념 숙지&#10;- 2. Flux/Mono 학습&#10;- 3. publisher 가 있으면 무조건 subscriber 가 있어야 작동한다.">
       <created>1709629539808</created>
@@ -314,11 +299,29 @@
       <option name="project" value="LOCAL" />
       <updated>1709676758531</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="[Webflux 학습 #6 Webflux-PostController2]&#10;&#10;- 1. Post domain에 대한 CRUD 비동기 API 구축&#10;- 2. User domain 을 memory -&gt; R2dbc 로 repository 변경&#10;- 3. Post domain에 대해 R2dbc 를 이용하여 비동기 db 사용&#10;- 4. R2dbcConfig를 통해 db와의 connection 확인">
+      <created>1709678335259</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709678335259</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Webflux 학습 #1. Publisher/Subscriber]&#10;- 1. Reactor API 기본 개념 숙지&#10;- 2. Flux/Mono 학습&#10;- 3. publisher 가 있으면 무조건 subscriber 가 있어야 작동한다." />
