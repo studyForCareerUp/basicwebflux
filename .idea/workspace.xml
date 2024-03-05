@@ -4,31 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5bafd864-b3c9-4c03-a236-86f5c03c7b47" name="Changes" comment="[Webflux 학습 #3 Webflux]&#10;- 1. Router Function 방식으로 응닫&#10;- 2. Controller annotation 방식으로 응답">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mywebflux/MywebfluxApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mywebflux/reactor/Operator1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mywebflux/reactor/Operator2.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mywebflux/reactor/Operator3.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mywebflux/reactor/Operator4.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mywebflux/reactor/PubSubMain.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mywebflux/reactor/Publisher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/mywebflux/reactor/Scheduler1.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/mywebflux/MywebfluxApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/mywebflux/reactor/Operator1Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/mywebflux/reactor/Operator2Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/mywebflux/reactor/Operator3Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/mywebflux/reactor/Operator4Test.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/mywebflux/reactor/PublisherTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/mywebflux/reactor/Scheduler1Test.java" beforeDir="false" />
+    <list default="true" id="5bafd864-b3c9-4c03-a236-86f5c03c7b47" name="Changes" comment="[Webflux 학습 #3 Webflux-PostController]&#10;&#10;- 1. Router function vs Controller annotation 방식 차이 확인&#10;- 2. Webclient 를 통해 서버간의 비동기 통신 확인(PostController)&#10;- 3. multi module 구조를 위한 마이그레이션">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webflux/src/main/java/com/example/webflux/service/PostServiceImpl.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,33 +67,33 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gtpark/IdeaProjects/fastcampus/mywebflux&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;afa80c59c4da3ee64f380a7506ae558e&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "jdk.selected.JAVA_MODULE": "openjdk-19",
+    "last_opened_file_path": "/Users/gtpark/IdeaProjects/fastcampus/mywebflux",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "spring.configuration.checksum": "6f466ea16ecb6647d0425b3ff3b8c990",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.mywebflux.controller" />
@@ -134,9 +113,10 @@
       <recent name="com.example.mywebflux.reactor" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.webflux.dto" />
+      <recent name="com.example.webflux.repository" />
       <recent name="com.example.webflux.client" />
       <recent name="com.example.webflux.config" />
-      <recent name="com.example.webflux.dto" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -288,6 +268,7 @@
       <updated>1709627977479</updated>
       <workItem from="1709627978613" duration="10424000" />
       <workItem from="1709649287681" duration="489000" />
+      <workItem from="1709649803538" duration="1877000" />
     </task>
     <task id="LOCAL-00001" summary="[Webflux 학습 #1. Publisher/Subscriber]&#10;- 1. Reactor API 기본 개념 숙지&#10;- 2. Flux/Mono 학습&#10;- 3. publisher 가 있으면 무조건 subscriber 가 있어야 작동한다.">
       <created>1709629539808</created>
@@ -303,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1709635552252</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="[Webflux 학습 #3 Webflux-PostController]&#10;&#10;- 1. Router function vs Controller annotation 방식 차이 확인&#10;- 2. Webclient 를 통해 서버간의 비동기 통신 확인(PostController)&#10;- 3. multi module 구조를 위한 마이그레이션">
+      <created>1709650010397</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709650010397</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,6 +300,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="[Webflux 학습 #1. Publisher/Subscriber]&#10;- 1. Reactor API 기본 개념 숙지&#10;- 2. Flux/Mono 학습&#10;- 3. publisher 가 있으면 무조건 subscriber 가 있어야 작동한다." />
     <MESSAGE value="[Webflux 학습 #2. Operator/Scheduler]&#10;- 1. Reactor Operator 학습&#10;- 2. Test code 를 통해 검증(StepVerifier)" />
-    <option name="LAST_COMMIT_MESSAGE" value="[Webflux 학습 #2. Operator/Scheduler]&#10;- 1. Reactor Operator 학습&#10;- 2. Test code 를 통해 검증(StepVerifier)" />
+    <MESSAGE value="[Webflux 학습 #3 Webflux-PostController]&#10;&#10;- 1. Router function vs Controller annotation 방식 차이 확인&#10;- 2. Webclient 를 통해 서버간의 비동기 통신 확인(PostController)&#10;- 3. multi module 구조를 위한 마이그레이션" />
+    <option name="LAST_COMMIT_MESSAGE" value="[Webflux 학습 #3 Webflux-PostController]&#10;&#10;- 1. Router function vs Controller annotation 방식 차이 확인&#10;- 2. Webclient 를 통해 서버간의 비동기 통신 확인(PostController)&#10;- 3. multi module 구조를 위한 마이그레이션" />
   </component>
 </project>
